@@ -5,11 +5,9 @@
 //   links.classList.toggle("show-links");
 // });
 
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+const myFunction= function () {
+  document.getElementById("hamburger-menu").style.width = "35%";
+}
+const closeIcon = function() {
+  document.getElementById("hamburger-menu").style.width = "0%";
 }

@@ -66,6 +66,14 @@ i{
     display: flex;
     justify-content: space-between;
 }
+/* hamburger */
+.icon{
+    display: none;
+}
+.hamburger-menu{
+    width: 0;
+}
+
 
 .nav-section-2 p:hover, .nav-section-2 i:hover, .nav-section-2 img:hover{
     transform: scaleX(1.1);
@@ -410,13 +418,42 @@ footer{
 .nav-section-2{
     display: none;
 }
-a.icon {
+.icon {
     background: black;
-    display: block;
+    display: block; 
     position: absolute;
     left: 90%;
     top: 5;
 }
+/* hamburger menu styling */
+#hamburger-menu{
+    display: unset;
+    height: 50%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s; 
+    padding-top: 15px;
+}
+#hamburger-menu i{
+    display: block;
+    margin: 15px 7px 15px 20px;
+}
+#hamburger-menu p, #hamburger-menu img{
+    margin-left: 20px;
+}
+#cancel{
+    display: block;
+    position: absolute;
+    top: 3%;
+    right: 0%;
+}
+/* hambuerger menu end */
 
 a:hover {
     background-color: #ddd;
